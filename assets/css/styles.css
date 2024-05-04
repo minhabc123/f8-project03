@@ -29,6 +29,8 @@ a {
     --height: 60px;
     display: inline-block;
     min-width: 205px;
+    font-size: 1.8rem;
+    font-weight: 400;
     height: var(--height);
     padding: 0 20px;
     line-height: var(--height);
@@ -131,13 +133,12 @@ a {
     color: #fff;
 }
 
-.action {
+.header-action {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.action__login {
+.header-action__login {
     margin-right: 28px;
     color: #c9d2da;
     font-size: 1.6rem;
@@ -145,14 +146,82 @@ a {
     line-height: 2.8rem;
 }
 
-.action__signup:hover {
+.header-action__signup:hover {
     opacity: 0.9;
     cursor: pointer;
 }
 
-.action__signup {
+.header-action__signup {
     --height: 44px;
     min-width: 104px;
+    font-weight: 400;
     height: var(--height);
     line-height: var(--height);
+}
+
+/* hero */
+
+.hero {
+    padding: 76px 0 110px;
+    display: flex;
+}
+
+.hero__content {
+    width: 44.2%;
+    margin-right: 113px;
+}
+
+.hero__heading {
+    padding-top: 54px;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 114.286%; /* 114.286% */
+    letter-spacing: -0.14rem;
+}
+.hero__desc {
+    margin-top: 22px;
+    color: #c9d2da;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem; /* 166.667% */
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero__phone {
+    margin: 38px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero-images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__media--left {
+    position: relative;
+    width: 330px;
+    height: 540px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.hero__media--right {
+    margin-left: -6px;
+    width: 210px;
+    height: 410px;
+    object-fit: cover;
+    border-radius: 6px;
 }
