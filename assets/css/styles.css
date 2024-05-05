@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 :root {
-    --header-bg: #10375c;
+    --primary-color: #10375c;
+    --desc-color: #575f66;
 }
 
 html {
@@ -41,12 +42,37 @@ a {
     border: 1px solid #2e80ce;
 }
 
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.title__section {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 120% */
+    letter-spacing: -1px;
+}
+
+.desc__section {
+    margin: 18px auto 0;
+    text-align: center;
+    width: 468px;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 166.667%; /* 166.667% */
+}
 /* header */
 
 .header {
     padding-top: 30px;
     min-height: 100vh;
-    background-color: var(--header-bg);
+    background-color: var(--primary-color);
 }
 
 .header-top {
@@ -146,11 +172,6 @@ a {
     line-height: 2.8rem;
 }
 
-.header-action__signup:hover {
-    opacity: 0.9;
-    cursor: pointer;
-}
-
 .header-action__signup {
     --height: 44px;
     min-width: 104px;
@@ -224,4 +245,84 @@ a {
     height: 410px;
     object-fit: cover;
     border-radius: 6px;
+}
+
+/* services */
+
+.services {
+    padding: 170px 0;
+}
+
+.services__bottom {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services__img {
+    width: 570px;
+    height: 570px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.services__options {
+    margin-bottom: 55px;
+}
+
+.services-item {
+    display: flex;
+    width: 470px;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.services-item:hover {
+    position: relative;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.services-item:hover .services-item__icon {
+    color: #fff;
+    background-color: #2e80ce;
+}
+
+.services-item__icon {
+    margin: 21px 0 0 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 999px;
+    color: #10375c;
+    box-shadow: 0px 8px 16px 0px #0000000d;
+    background-color: #eff6fd;
+    flex-shrink: 0;
+    transition: 0.25s;
+}
+
+.services-item__icon:hover {
+    color: #ffffff;
+    background-color: #2e80ce;
+}
+
+.services-item__body {
+    padding: 22px 0 21px 0;
+    margin-left: 19px;
+}
+
+.services__title {
+    font-style: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.services__desc {
+    margin-top: 8px;
+    font-style: 1.6rem;
+    font-weight: 300;
+    color: var(--desc-color);
+    line-height: 1.75;
 }
